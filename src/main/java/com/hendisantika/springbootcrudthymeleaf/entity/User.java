@@ -1,6 +1,7 @@
 package com.hendisantika.springbootcrudthymeleaf.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -25,6 +26,7 @@ import javax.validation.constraints.NotBlank;
 @Data
 @ToString
 @NoArgsConstructor
+@EqualsAndHashCode
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
